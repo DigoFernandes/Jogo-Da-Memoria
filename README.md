@@ -1,7 +1,5 @@
 # Jogo de Memória de Cores
 
-![Screenshot]![[Pasted image 20231029161359.png]]
-
 Um simples jogo de memória de cores inspirado no "Simon".
 
 ## Funcionalidades
@@ -28,14 +26,6 @@ Um simples jogo de memória de cores inspirado no "Simon".
 - JavaScript
 - jQuery
 
-## Instalação
-
-1. Clone este repositório:``
-
-git clone [https://github.com/seu-usuario/nome-do-repositorio.git](https://github.com/seu-usuario/nome-do-repositorio.git)
-
-
-``2. Abra o arquivo `index.html` em seu navegador. 
 ## Contribuições 
 
 Contribuições são bem-vindas! Sinta-se à vontade para abrir uma "issue" ou enviar um "pull request" com melhorias, correções de bugs ou novos recursos.  
