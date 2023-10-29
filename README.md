@@ -1,7 +1,5 @@
 # Jogo de Memória de Cores
 
-![Screenshot]![[Pasted image 20231029161359.png]]
-
 Um simples jogo de memória de cores inspirado no "Simon".
 
 ## Funcionalidades
