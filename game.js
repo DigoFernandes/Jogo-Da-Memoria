@@ -1,8 +1,8 @@
-var botaoColorido = ["red", "blue", "green", "yellow"];
-var padraoJogo = [];
-var coresEscolhidaUsuario = [];
-var iniciou = false;
-var nivel = 0;
+let botaoColorido = ["red", "blue", "green", "yellow"];
+let padraoJogo = [];
+let coresEscolhidaUsuario = [];
+let iniciou = false;
+let nivel = 0;
 
 $(document).ready(function () {
   $(this).keypress(function (e) {
@@ -14,16 +14,15 @@ $(document).ready(function () {
 
   $(".btn").click(function () {
     if (iniciou) {
-      var escolhaUsuario = $(this).attr("id");
+      let escolhaUsuario = $(this).attr("id");
       coresEscolhidaUsuario.push(escolhaUsuario);
       tocarSom(escolhaUsuario);
       animacaoPressionar(escolhaUsuario);
-      var nivelAtual = coresEscolhidaUsuario.length - 1;
+      let nivelAtual = coresEscolhidaUsuario.length - 1;
       checarRespostas(nivelAtual);
     }
   });
 });
-
 
 function proximaSequencia() {
   coresEscolhidaUsuario = [];
@@ -31,8 +30,8 @@ function proximaSequencia() {
   nivel++;
   $("#level-title").text("Nível " + nivel);
 
-  var numeroAleatorio = Math.floor(Math.random() * 4);
-  var corEscolhidaAleatoria = botaoColorido[numeroAleatorio];
+  let numeroAleatorio = Math.floor(Math.random() * 4);
+  let corEscolhidaAleatoria = botaoColorido[numeroAleatorio];
   padraoJogo.push(corEscolhidaAleatoria);
   $("#" + corEscolhidaAleatoria)
     .fadeOut()
@@ -74,6 +73,6 @@ function animacaoPressionar(corPadrao) {
 }
 
 function tocarSom(nome) {
-  var som = new Audio("sounds/" + nome + ".mp3");
+  let som = new Audio("sounds/" + nome + ".mp3");
   som.play();
 }
